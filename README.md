@@ -10,7 +10,7 @@ A simple Python script that generates random passwords for you.
 
 1. Make sure you have Python / Pycharm installed.
 2. Download or clone this repository.
-3. Run the script using the command line:
+3. Run the Python file:
 
 ```python
 import random
