@@ -12,5 +12,24 @@ A simple Python script that generates random passwords for you.
 2. Download or clone this repository.
 3. Run the script using the command line:
 
-```bash
-python password_generator.py
+```python
+import random
+
+
+def make_password():
+    # Get a list of all possible characters
+    all_chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()'
+
+    # Choose a random length for the password
+    length = random.randint(8, 16)
+
+    # Make a password by picking random characters
+    password = ''
+    for i in range(length):
+        password += random.choice(all_chars)
+
+    return password
+
+
+# Make a password and print it
+print("Your Password is:",make_password())
