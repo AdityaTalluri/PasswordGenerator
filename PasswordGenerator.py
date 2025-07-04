@@ -21,3 +21,5 @@ def make_password():
 # Make a password and print Your password is: ""
 
 print("Your Password is:",make_password())
+
+#And Your password is now generated! you can change the length for the password where it says: "length = random.randint(8, 16)"
